@@ -1,0 +1,84 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Welcome to Submission Portal</title>
+  		
+		<script>
+			function myfun()
+			{
+				var guidebutton=document.getElementById("butn");
+				var guidelines=document.getElementById('guidelines');
+				if(guidebutton.value=="Click to see guidelines")
+				{
+				
+					guidelines.style.display='block';
+					guidebutton.value='Click to Hide guidelines';
+				}
+				else if(guidebutton.value=="Click to Hide guidelines")
+				{
+			
+					guidelines.style.display='none';
+					guidebutton.value='Click to see guidelines';
+				}
+			}
+		</script>
+	
+  </head>
+  <body>
+		<nav class="navbar-nav navbar-expand-sm bg-dark">
+		<div class="nav-item item1" style="margin-left:5%">
+				<h2 onclick='window.location.reload();' style="cursor:pointer">NED Submission Portal</h2>
+		</div>
+		<div class="nav-item items" >
+				<a class="nav-link" href="userlogin1.html">User Login</a>
+		</div>
+			<div class="nav-item items">
+				<a class="nav-link" href="userreg1.html">User Registration</a>
+		</div>
+			<div class="nav-item items">
+				<a class="nav-link" href="adminlogin1.html">ADMIN</a>
+		</div>
+		</nav>
+	<!---------------------------------------------------------------------------------------------------------------------->
+
+		<div class="welcome container">
+			<h3>Welcome To Submission Portal</h3> 
+		
+		
+		<div class="guide">
+			
+				<input type="button" class="btn btn-light form-control" onClick="myfun()" id="butn" value="Click to see guidelines" ">
+		
+			<div id="guidelines" style="display:none">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item list-group-item-dark">
+						If you want to Submit a voucher proceed to register yourself in <a href="userreg1.html">User registration</a>
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						After registration Login in to <a href="userlogin1.html">User Login</a>
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						Fill in correct details.
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						After submission wait for the admin approval. 
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						You can see your previous submissions status on your dashboard.
+					</li>
+					<li class="list-group-item list-group-item-dark">
+						Do not forget to log out.
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<br /><hr />
+		
+		</div>		
+  </body>
+</html>
